@@ -5,49 +5,58 @@
 }
 
 body {
-    background: #000;
-    color: #eee;
+    background: linear-gradient(180deg, #0a0a0a, #1a1a1a);
+    color: #e0e0e0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
 }
 
+/* HEADER */
 header {
-    background: #111;
+    background: linear-gradient(135deg, #111, #222);
     color: #fff;
     padding: 2rem 0;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
 }
 
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #aaa, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+/* MAIN */
 main {
     padding: 2rem;
 }
 
+/* HERO */
 .hero {
     text-align: center;
     padding: 3rem 1rem;
-    background: #222;
+    background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
     color: #ddd;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
 .hero h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #f0f0f0;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    color: #bbb;
 }
 
+/* INFO CARDS */
 .info {
     display: flex;
     flex-wrap: wrap;
@@ -56,33 +65,35 @@ main {
 }
 
 .card {
-    background: #333;
+    background: linear-gradient(145deg, #2a2a2a, #3a3a3a);
     padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    flex: 1 1 250px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    flex: 1 1 280px;
     text-align: center;
-    background: linear-gradient(135deg, #333, #444);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
 }
 
 .card h3 {
-    color: #fff;
+    color: #f5f5f5;
     margin-bottom: 0.5rem;
 }
 
 .card p {
-    color: #ccc;
+    color: #cfcfcf;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #111;
-    color: #999;
+    background: linear-gradient(135deg, #111, #1a1a1a);
+    color: #888;
     margin-top: 2rem;
+    border-top: 1px solid #333;
 }
