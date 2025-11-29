@@ -1,24 +1,22 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales */
 body {
+    background: #000;
+    color: #eee;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f2f5;
-    color: #333;
     line-height: 1.6;
 }
 
-/* Cabecera */
 header {
-    background: #2c3e50;
-    color: white;
+    background: #111;
+    color: #fff;
     padding: 2rem 0;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 header h1 {
@@ -26,7 +24,6 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
-/* Sección principal */
 main {
     padding: 2rem;
 }
@@ -34,10 +31,11 @@ main {
 .hero {
     text-align: center;
     padding: 3rem 1rem;
-    background: #3498db;
-    color: white;
+    background: #222;
+    color: #ddd;
     border-radius: 10px;
     margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .hero h2 {
@@ -50,48 +48,41 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.btn {
-    background: #e74c3c;
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background: #c0392b;
-}
-
-/* Características */
-.features {
+.info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
-.feature {
-    background: white;
+.card {
+    background: #333;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex: 1 1 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    flex: 1 1 250px;
     text-align: center;
+    background: linear-gradient(135deg, #333, #444);
+    transition: transform 0.3s ease;
 }
 
-.feature h3 {
-    color: #2c3e50;
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #fff;
     margin-bottom: 0.5rem;
 }
 
-/* Pie de página */
+.card p {
+    color: #ccc;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
-    background: #2c3e50;
-    color: white;
+    background: #111;
+    color: #999;
     margin-top: 2rem;
 }
